@@ -19,6 +19,11 @@ html {
   background-color: #eee;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* thank you w3schools for the nav bar <333 */
 
 .nav-bar {
@@ -77,6 +82,54 @@ li button {
 
 li button:hover {
   background-color: #0066cc;
+}
+
+/* Add these styles to your existing CSS */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger img {
+  height: 75px;
+  margin-left: 800px;
+  margin-top: 25px;
+}
+
+@media (max-width: 1000px) {
+  .nav-bar p {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #eee;
+  }
+
+  .nav-bar button {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #eee;
+  }
+
+  .nav-bar ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-bar ul li {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-bar ul li a {
+    padding: 15px;
+  }
 }
 
 .logo {
@@ -180,10 +233,6 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.container {
-  display: flex;
 }
 
 .section {

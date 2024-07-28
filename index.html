@@ -13,6 +13,9 @@
 
 <!-- Navigation -->
 <nav class="nav-bar">
+    <div class="hamburger" onclick="toggleMenu()">
+        <img src="img/menu.svg" />
+    </div>
     <ul>
         <li><a href="./index.html"><img src="img/logo.png" class="logo"></a></li>
         <li style="float: right"><a class="nav-link" href="en.html" style="text-decoration: none"><button>english</button></a></li>
@@ -42,9 +45,8 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!-- Misión -->
-<div id="Mision" class="blue-background" style="padding-top: 100px; padding-bottom: 100px;">
+<div id="Mision" class="container-fluid blue-background" style="padding-top: 100px; padding-bottom: 100px;">
     <h1 class="sec-title" style="color: #eee;">NUESTRA MISIÓN</h1>
-    <div class="container">
         <div class="section">
             <img style="height: 300px;" src="img/education.svg">
             <p class="org-title" style="color: #eee;">Educación</p>
@@ -61,9 +63,8 @@
 </div>
 
 <!-- Programas -->
-<div id="Programas" class="white-background" style="padding-top: 100px; padding-bottom: 100px;">
+<div id="Programas" class="container-fluid white-background" style="padding-top: 100px; padding-bottom: 100px;">
     <h1 class="sec-title" style="color: #023e8a;">NUESTRAS PROGRAMAS</h1>
-    <div class="container">
         <div class="section">
             <img style="height: 160px;" src="img/python.svg">
             <p class="grp-title" style="color: #023e8a;">Python</p>
@@ -88,7 +89,7 @@
 </div>
 
 <!-- Ayudar -->
-<div id="Ayudar" class="blue-background" style="padding-top: 100px; padding-bottom: 100px;">
+<div id="Ayudar" class="container-fluid blue-background" style="padding-top: 100px; padding-bottom: 100px;">
     <h1 class="sec-title" style="color: #eee;">AYUDAR</h1>
     <div class="container">
         
@@ -96,9 +97,8 @@
 </div>
 
 <!-- Dónde -->
-<div id="Donde" class="white-background" style="padding-top: 100px; padding-bottom: 100px;">
+<div id="Donde" class="container-fluid white-background" style="padding-top: 100px; padding-bottom: 100px;">
     <h1 class="sec-title" style="color: #023e8a;">¿DÓNDE ESTAMOS?</h1>
-    <div class="container">
         <div class="section">
             <img style="height: 125px;" src="img/lsf.png">
         </div>
@@ -106,7 +106,6 @@
             <img style="height: 175px;" src="img/nrpl.png">
         </div>
     </div>
-    <div class="container">
         <div class="section">
             <img style="height: 200px;" src="img/rpl.png">
         </div>
@@ -117,9 +116,8 @@
 </div>
 
 <!-- Sobre -->
-<div id="Sobre" class="blue-background" style="padding-top: 100px; padding-bottom: 100px;">
+<div id="Sobre" class="container-fluid blue-background" style="padding-top: 100px; padding-bottom: 100px;">
     <h1 class="sec-title" style="color: #eee;">SOBRE NOSOTRAS</h1>
-    <div class="container">
         <div class="section">
             <img class="headshot" src="img/emma.png">
             <p class="org-title"><b style="color: #eee;">Emma López</b></p>
@@ -137,7 +135,6 @@
 
 <!-- Footer -->
 <div id="Footer" class="white-background" style="padding-top: 100px; padding-bottom: 100px;">
-    <div class="container">
         <div class="section">
             <img class="footer-img" src="img/gmail.svg">
         </div>
@@ -152,6 +149,13 @@
         </div>
     </div>
 </div>
+
+<script>
+function toggleMenu() {
+    const navBar = document.querySelector('.nav-bar ul');
+    navBar.classList.toggle('active');
+}
+</script>
 
 </body>
 </html>
