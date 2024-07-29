@@ -86,52 +86,6 @@ li button:hover {
 
 /* Add these styles to your existing CSS */
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger img {
-  height: 75px;
-  margin-left: 800px;
-  margin-top: 25px;
-}
-
-@media (max-width: 1000px) {
-  .nav-bar p {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #eee;
-  }
-
-  .nav-bar button {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #eee;
-  }
-
-  .nav-bar ul.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-bar ul li {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-bar ul li a {
-    padding: 15px;
-  }
-}
-
 .logo {
   height: 75px;
   margin-left: 40px; 
