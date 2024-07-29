@@ -22,15 +22,40 @@ html {
 html, body {
   width: 100%;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* thank you w3schools for the nav bar <333 */
 
 .nav-bar {
-  padding-top: 0;
-  padding-bottom: 150px;
-  position: sticky; 
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
   top: 0;
+  background-color: #eee; /* Background color of the nav bar */
+  padding: 0;
+  z-index: 1000; /* Ensure it stays on top */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.nav-bar nav ul {
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.nav-bar nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-bar nav ul li a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 li {
@@ -96,7 +121,7 @@ li button:hover {
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  padding-left: 55px;
+  text-align: left;
   padding-right: 225px;
   margin-top: -30px;
 }
@@ -135,35 +160,11 @@ span {
   padding-top: 10px;
 }
 
-.p1 a:hover {
-  color: #cce5ff;
+.link {
+  padding-top: 5px;
 }
 
-.p2 a:hover {
-  color: #99ccff;
-}
-
-.p3 a:hover {
-  color: #66b2ff;
-}
-
-.p4 a:hover {
-  color: #3299ff;
-}
-
-.p5 a:hover {
-  color: #007fff;
-}
-
-.p6 a:hover {
-  color: #0066cc;
-}
-
-.p7 a:hover {
-  color: #004c99;
-}
-
-.p8 a:hover {
+.link a:hover {
   color: #023e8a;
 }
 
@@ -179,6 +180,8 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 100px; 
+  padding-bottom: 100px;
 }
 
 .white-background {
@@ -187,6 +190,13 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 100px; 
+  padding-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  width: 80%;
 }
 
 .section {
